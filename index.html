@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For My Peri</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Optional: Add a bear icon for browser tab -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐻</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- Audio Element (must be named romantic_song.mp3 and be in same folder) -->
+    <audio id="romanticSong" loop>
+      <source src="romantic_song.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- STAGE 1: The Main Question -->
+    <div class="container" id="mainPrompt">
+      <p class="love-note cute-bear-heading">To my dearest Prerna,</p>
+      <p class="love-note">My precious Baby, my beautiful Peri...</p>
+      <p class="love-note">
+        From our quiet, starry evenings by the lake to the sunny boat rides
+        under a clear sky, every moment we share is etched into my heart.
+      </p>
+      <p class="love-note">
+        You make my world infinitely brighter. I’d love to take you on a special
+        date to create even more perfect memories.
+      </p>
+      <p class="love-note final-question">Will you be my date?</p>
+
+      <div class="button-group">
+        <button id="yesBtn" class="primary-btn" onclick="celebrateSuccess()">
+          YES!
+        </button>
+        <button id="noBtn" class="running-button secondary-btn">No...</button>
+      </div>
+    </div>
+
+    <!-- STAGE 2: Confimation (Loops back to Stage 1) -->
+    <div class="container hidden" id="confirmationPrompt">
+      <h2 class="shocked-text">ARE YOU SURE? Wait... my heart...</h2>
+      <p>This cannot be... rethink this, Baby!</p>
+      <div class="button-group">
+        <!-- This YES will also run away -->
+        <button id="confirmYesBtn" class="running-button secondary-btn">
+          Yes, I'm sure
+        </button>
+        <!-- This NO takes you back to Stage 1 -->
+        <button
+          id="confirmNoBtn"
+          class="primary-btn"
+          onclick="goBackToPrompt()"
+        >
+          Wait, No! I'm sorry!
+        </button>
+      </div>
+    </div>
+
+    <!-- STAGE 3: Success Screen with Collage and Music -->
+    <div class="container hidden" id="collageSection">
+      <h2 class="celebration-text">YES! She said YES!</h2>
+      <p class="love-note best-day-text">The best day ever!</p>
+
+      <div class="collage-grid">
+        <div class="collage-item polaroid">
+          <img src="image_0.png" alt="Couple by night lake" />
+        </div>
+        <div class="collage-item polaroid">
+          <img src="image_1.png" alt="Couple by sunny lake" />
+        </div>
+        <div class="collage-item polaroid">
+          <img src="image_2.png" alt="Couple mirror selfie" />
+        </div>
+        <div class="collage-item polaroid">
+          <img src="image_3.png" alt="Couple cozy mirror selfie" />
+        </div>
+        <div class="collage-item polaroid">
+          <img src="image_4.png" alt="Couple looking lovingly at each other" />
+        </div>
+      </div>
+
+      <p class="final-note">
+        Can't wait for our date, Peri! I love you endlessly. ❤️🐻
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
