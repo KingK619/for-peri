@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>For My Baby</title>
+    <title>For My Baby 🐻💖</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Optional: Add a bear icon for browser tab -->
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐻</text></svg>"
     />
   </head>
   <body>
-    <!-- Audio Element (matches your file name romantic_song.mp3.mp3) -->
+    <!-- Audio Element -->
     <audio id="romanticSong" loop>
       <source src="romantic_song.mp3.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
@@ -20,37 +19,42 @@
 
     <!-- STAGE 1: The Main Question -->
     <div class="container" id="mainPrompt">
-      <!-- Placeholder for a transparent Milk & Mocha PNG, instructions in CSS -->
       <div class="bear-header"></div>
-      <p class="love-note cute-bear-heading">Tu meri mittho, meri sohniye!</p>
-      <p class="love-note">
-        Baby, every single day with you feels like a beautiful dream come true.
-        Your smile just lights up everything, you cutie patuti! You are my
-        shona, my everything. every memory we share, every laugh, it all means
-        the absolute world to me. I'm so lucky to have you, sohniye.
+      <p class="love-note cute-bear-heading">
+        Tu meri mittho, meri sohniye! ✨🎀
       </p>
       <p class="love-note">
-        I’d love to take you on a special date to create even more perfect
-        memories together. Please?
+        Baby 🥺, every single day with you feels like a beautiful dream come
+        true 🌌. Your smile just lights up everything, you cutie patuti! 🥰 You
+        are my shona, my everything 🌍. Every memory we share 📸, every laugh
+        😂, it all means the absolute world to me 💫. I'm so lucky to have you,
+        sohniye 🧿❤️.
       </p>
-      <p class="love-note final-question">Will you be my date, Baby? ❤️🐻</p>
+      <p class="love-note">
+        I’d love to take you on a special date 🥂🍽️ to create even more perfect
+        memories together 💑. Please? 🥺👉👈
+      </p>
+      <p class="love-note final-question">Will you be my date, Baby? 🌹🐻💝</p>
 
       <div class="button-group">
         <button id="yesBtn" class="primary-btn" onclick="celebrateSuccess()">
-          YES!
+          YES! 😍🎉
         </button>
-        <button id="noBtn" class="running-button secondary-btn">No...</button>
+        <!-- Notice we removed the running class and added an onclick event -->
+        <button id="noBtn" class="secondary-btn" onclick="showConfirmation()">
+          No... 😢
+        </button>
       </div>
     </div>
 
-    <!-- STAGE 2: Confirmation (Loops back to Stage 1) -->
+    <!-- STAGE 2: Confirmation -->
     <div class="container hidden" id="confirmationPrompt">
-      <h2 class="shocked-text">ARE YOU SURE? Wait... my heart...</h2>
-      <p>This cannot be... rethink this, Baby!</p>
+      <h2 class="shocked-text">ARE YOU SURE?! 😱💔 Wait... my heart... 🚑</h2>
+      <p>This cannot be... 😭 rethink this, Baby! 🙏🥺</p>
       <div class="button-group">
-        <!-- This YES will also run away -->
+        <!-- This YES (confirming the No) will run away -->
         <button id="confirmYesBtn" class="running-button secondary-btn">
-          Yes, I'm sure
+          Yes, I'm sure 🏃‍♀️💨
         </button>
         <!-- This NO takes you back to Stage 1 -->
         <button
@@ -58,25 +62,23 @@
           class="primary-btn"
           onclick="goBackToPrompt()"
         >
-          Wait, No! I'm sorry!
+          Wait, No! I'm sorry! 🥺🔙
         </button>
       </div>
     </div>
 
     <!-- STAGE 3: Success Screen with Collage and Music -->
     <div class="container hidden" id="collageSection">
-      <h2 class="celebration-text">YES! She said YES!</h2>
+      <h2 class="celebration-text">YES! She said YES! 🥳💖🎊</h2>
 
-      <!-- Placeholder for a transparent Milk & Mocha GIF, instructions in CSS -->
       <div class="success-gif-container"></div>
 
-      <p class="love-note best-day-text">
-        Every day with you is the best day ever!
-      </p>
+      <p class="love-note best-day-text">The best day ever! 🥂✨</p>
 
       <div class="collage-grid">
+        <!-- Updated to .jpg for the previously broken images -->
         <div class="collage-item polaroid">
-          <img src="image_0.png.HEIC" alt="Couple image 1" />
+          <img src="image_0.png.jpg" alt="Couple image 1" />
         </div>
         <div class="collage-item polaroid">
           <img src="image_1.png.JPG" alt="Couple image 2" />
@@ -90,13 +92,14 @@
         <div class="collage-item polaroid">
           <img src="image_4.png.jpeg" alt="Couple image 5" />
         </div>
+        <!-- Updated to .jpg for the previously broken images -->
         <div class="collage-item polaroid">
-          <img src="image_5.png.HEIC" alt="Couple image 6" />
+          <img src="image_5.jpg" alt="Couple image 6" />
         </div>
       </div>
 
       <p class="final-note">
-        Can't wait for our date, Baby! I love you endlessly. ❤️🐻
+        Can't wait for our date, Baby! I love you endlessly. ❤️🐻💋
       </p>
     </div>
 
