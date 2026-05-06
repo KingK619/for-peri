@@ -11,24 +11,27 @@
     />
   </head>
   <body>
-    <!-- Audio Element -->
-    <audio id="romanticSong" loop>
+    <!-- Audio Element (Now set to autoplay!) -->
+    <audio id="romanticSong" loop autoplay>
       <source src="romantic_song.mp3.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
 
     <!-- STAGE 1: The Main Question -->
     <div class="container" id="mainPrompt">
-      <div class="bear-header"></div>
+      <!-- Bear Image (Upload a file named bear.png to your folder) -->
+      <img src="bear.png" alt="Cute Bear" class="bear-img" />
+
+      <!-- UPDATED LOVE NOTE -->
       <p class="love-note cute-bear-heading">
-        Tu meri mittho, meri sohniye! ✨🎀
+        Hi Baby! Meri Mittho, Meri Sohniye!✨🎀
       </p>
       <p class="love-note">
-        Baby 🥺, every single day with you feels like a beautiful dream come
+        Baby 🥺, every moment spent with you feels like a beautiful dream come
         true 🌌. Your smile just lights up everything, you cutie patuti! 🥰 You
         are my shona, my everything 🌍. Every memory we share 📸, every laugh
         😂, it all means the absolute world to me 💫. I'm so lucky to have you,
-        sohniye 🧿❤️.
+        sohniyo 🧿❤️.
       </p>
       <p class="love-note">
         I’d love to take you on a special date 🥂🍽️ to create even more perfect
@@ -40,7 +43,6 @@
         <button id="yesBtn" class="primary-btn" onclick="celebrateSuccess()">
           YES! 😍🎉
         </button>
-        <!-- Notice we removed the running class and added an onclick event -->
         <button id="noBtn" class="secondary-btn" onclick="showConfirmation()">
           No... 😢
         </button>
@@ -71,14 +73,14 @@
     <div class="container hidden" id="collageSection">
       <h2 class="celebration-text">YES! She said YES! 🥳💖🎊</h2>
 
-      <div class="success-gif-container"></div>
+      <!-- NEW: Spot for your success GIF (Upload success.gif to your folder) -->
+      <img src="download.gif" alt="Yay GIF" class="success-gif" />
 
       <p class="love-note best-day-text">The best day ever! 🥂✨</p>
 
       <div class="collage-grid">
-        <!-- Updated to .jpg for the previously broken images -->
         <div class="collage-item polaroid">
-          <img src="image_0.png.jpg" alt="Couple image 1" />
+          <img src="image_0.jpg" alt="Couple image 1" />
         </div>
         <div class="collage-item polaroid">
           <img src="image_1.png.JPG" alt="Couple image 2" />
@@ -92,9 +94,8 @@
         <div class="collage-item polaroid">
           <img src="image_4.png.jpeg" alt="Couple image 5" />
         </div>
-        <!-- Updated to .jpg for the previously broken images -->
         <div class="collage-item polaroid">
-          <img src="image_5.png.jpg" alt="Couple image 6" />
+          <img src="image_5.jpg" alt="Couple image 6" />
         </div>
       </div>
 
@@ -103,6 +104,6 @@
       </p>
     </div>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=4"></script>
   </body>
 </html>

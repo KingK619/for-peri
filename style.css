@@ -1,11 +1,10 @@
 /* MILK & MOCHA THEME COLOR PALETTE */
 :root {
-  --pastle-pink: #FFDDEE; /* Soft pastel pink */
-  --pastle-blue: #DDF3FF; /* Soft pastel blue */
-  --milk-white: #FDFFF5;   /* Creamy background */
-  --mocha-brown: #5D4037;  /* Accent text for bears */
-  --love-red: #E91E63;     /* Success highlights */
-  
+  --pastle-pink: #FFDDEE;
+  --pastle-blue: #DDF3FF;
+  --milk-white: #FDFFF5;
+  --mocha-brown: #5D4037;
+  --love-red: #E91E63;
   --primary-font: 'Rounded Mplus 1c', 'Segoe UI', sans-serif;
 }
 
@@ -26,7 +25,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll when buttons run */
+  overflow-x: hidden;
 }
 
 .container {
@@ -62,7 +61,6 @@ body {
   margin-top: 1.5rem;
 }
 
-/* Milk & Mocha stylized heading accent */
 .cute-bear-heading::before,
 .cute-bear-heading::after {
   content: '🐻';
@@ -82,43 +80,13 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* PLACEHOLDER STYLES FOR MILK & MOCHA GIFS/PNGS */
-
-/* Top header PNG (static image) */
-.bear-header {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 1.5rem auto;
-  
-  /* ⚠️ IMPORTANT: REPLACE THIS URL with a transparent Milk & Mocha PNG URL */
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF+/v7////0kqNoAAAABJ0Uk5T////////////////////uoD56QAAAOpJREFUeNrs2bEKwkAMBuD//9PeR7bC0d6gK7idF6Qp7qU0xL2UhrhnA9z6AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AHeuA9z+AH+G8BMAZkX/hL7gDAAAAAElFTkSuQmCC');
-  
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* Large success GIF */
-.success-gif-container {
-  width: 250px;
-  height: 200px;
-  margin: 0 auto 1.5rem auto;
-  
-  /* ⚠️ IMPORTANT: REPLACE THIS URL with a transparent Milk & Mocha romantic GIF URL */
-  background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
-  
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 /* BUTTONS */
 .button-group {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  flex-wrap: wrap; /* Ensure they wrap on small mobile */
+  flex-wrap: wrap;
 }
 
 button {
@@ -133,7 +101,6 @@ button {
   box-sizing: border-box;
 }
 
-/* Pulse animation for the YES button */
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(233, 30, 99, 0.4); }
   70% { box-shadow: 0 0 0 10px rgba(233, 30, 99, 0); }
@@ -158,34 +125,32 @@ button {
   border: 2px solid var(--mocha-brown);
 }
 
-/* Running away button style */
 .running-button {
-  transition: none !important; /* Instant teleportation */
+  transition: none !important;
   z-index: 10;
 }
 
-/* COLLAGE (Updated for 6 photos in a 3x2 grid) */
+/* COLLAGE */
 .collage-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Clean 3x2 grid on desktop */
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   margin: 2rem 0;
 }
 
 .collage-item img {
   width: 100%;
-  height: 180px; /* Adjusted height slightly for the new layout */
+  height: 180px;
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* Polaroid style frames for the photos */
 .polaroid {
   background: white;
   padding: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
   border-radius: 8px;
-  transform: rotate(-3deg); /* Slight angle for playful look */
+  transform: rotate(-3deg);
   transition: transform 0.3s ease;
 }
 
@@ -207,7 +172,6 @@ button {
   margin-top: 1.5rem;
 }
 
-/* ANIMATIONS */
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   20% { transform: translateX(-5px); }
@@ -216,13 +180,30 @@ button {
   80% { transform: translateX(2px); }
 }
 
-/* MOBILE RESPONSIVE adjustments */
 @media screen and (max-width: 480px) {
   .collage-grid {
-    grid-template-columns: 1fr; /* Stack vertically on small mobile */
+    grid-template-columns: 1fr;
   }
-  
   .primary-btn, .secondary-btn {
-    width: 100%; /* Full width buttons on mobile */
+    width: 100%;
   }
+}
+
+/* --- NEW IMAGE STYLES --- */
+
+/* The Top Bear Image */
+.bear-img {
+  width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* The Success GIF */
+.success-gif {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 15px;
 }
