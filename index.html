@@ -11,18 +11,23 @@
     />
   </head>
   <body>
-    <!-- Audio Element (Now set to autoplay!) -->
-    <audio id="romanticSong" loop autoplay>
+    <!-- AUDIO PLAYERS -->
+    <audio id="promptSong" loop autoplay>
+      <source src="kaunbanegacrorepati.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="sadSong" loop>
+      <source src="sad_song.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="successSong" loop>
       <source src="romantic_song.mp3.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
     </audio>
 
     <!-- STAGE 1: The Main Question -->
     <div class="container" id="mainPrompt">
-      <!-- Bear Image (Upload a file named bear.png to your folder) -->
       <img src="bear.png" alt="Cute Bear" class="bear-img" />
 
-      <!-- UPDATED LOVE NOTE -->
       <p class="love-note cute-bear-heading">
         Hi Baby! Meri Mittho, Meri Sohniye!✨🎀
       </p>
@@ -51,14 +56,16 @@
 
     <!-- STAGE 2: Confirmation -->
     <div class="container hidden" id="confirmationPrompt">
+      <!-- NEW: Crybear GIF -->
+      <img src="crybear.gif" alt="Crying Bear" class="bear-img" />
+
       <h2 class="shocked-text">ARE YOU SURE?! 😱💔 Wait... my heart... 🚑</h2>
       <p>This cannot be... 😭 rethink this, Baby! 🙏🥺</p>
+
       <div class="button-group">
-        <!-- This YES (confirming the No) will run away -->
         <button id="confirmYesBtn" class="running-button secondary-btn">
           Yes, I'm sure 🏃‍♀️💨
         </button>
-        <!-- This NO takes you back to Stage 1 -->
         <button
           id="confirmNoBtn"
           class="primary-btn"
@@ -73,14 +80,13 @@
     <div class="container hidden" id="collageSection">
       <h2 class="celebration-text">YES! She said YES! 🥳💖🎊</h2>
 
-      <!-- NEW: Spot for your success GIF (Upload success.gif to your folder) -->
       <img src="download.gif" alt="Yay GIF" class="success-gif" />
 
       <p class="love-note best-day-text">The best day ever! 🥂✨</p>
 
       <div class="collage-grid">
         <div class="collage-item polaroid">
-          <img src="image_0.jpg" alt="Couple image 1" />
+          <img src="image_0.jpeg" alt="Couple image 1" />
         </div>
         <div class="collage-item polaroid">
           <img src="image_1.png.JPG" alt="Couple image 2" />
@@ -92,7 +98,7 @@
           <img src="image_3.png.JPG" alt="Couple image 4" />
         </div>
         <div class="collage-item polaroid">
-          <img src="image_4.png.jpeg" alt="Couple image 5" />
+          <img src="image_4.png.jpg" alt="Couple image 5" />
         </div>
         <div class="collage-item polaroid">
           <img src="image_5.jpg" alt="Couple image 6" />
@@ -104,6 +110,6 @@
       </p>
     </div>
 
-    <script src="script.js?v=4"></script>
+    <script src="script.js?v=6"></script>
   </body>
 </html>
